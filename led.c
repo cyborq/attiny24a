@@ -1,8 +1,7 @@
 /*
  * led.c
  *
- * Created: 13.12.2018 01:16:49
- *  Author: Misiek
+ * 
  */ 
 #include <avr/io.h>
 #include <util/delay.h>
@@ -66,26 +65,7 @@ void DiodaNaladowana(int ac)
 		//tu jak bedzie tranzystor bedzie trzeba odcianac zasilanie reszty ukladu
 	}
 }
-/*
-void I2C_init(uint8_t address)
-{
-	USICR = (1<<USISIE) 
-	| (0<<USIOIE) 
-	| (0<<USIWM1) | (1<<USIWM0) 
-	| (1<<USICS1) | (0<<USICLK) 
-	| (1<<USITC);
-	
-	USISR = (1<<USISIF) | (1<<USIOIF) | (1<<USIPF) | (1<<USIDC);
-	DDR(PORT_SDA) |= (1<<PIN_SDA); //sda jako wyjscie
-	DDR(PORT_SCL) |= (1<<PIN_SCL); //sda jako wyjscie
-	PORT(PORT_SDA) |= (1<<PIN_SDA); //stan wysoki na sda
- 	PORT(PORT_SCL) |= (1<<PIN_SCL); //stan wysoki na scl
-	DDR(PORT_SDA) &= ~(1<<PIN_SDA);	//sda jako wejscie
-	
-	USICR |= (1<<USISIE);
-}*/
 
-//obs³uga diod
 void diodyInit()
 {
 	DDR(LED_75) |= (1<<L_75);
