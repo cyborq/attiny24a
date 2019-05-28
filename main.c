@@ -1,8 +1,7 @@
 /*
- * plytkaLED.c
+ * 
  *
- * Created: 24.11.2018 01:08:14
- * Author : Misiek
+
  */ 
 
 #include <avr/io.h>
@@ -57,34 +56,21 @@ int main(void)
 	//	sprintf(tab,"Wynik:  %d ", AC());
 	temp =  'M';
 	USI_TWI_Transmit_Byte(temp);
-		temp =  'i';
-	USI_TWI_Transmit_Byte(temp);
-		temp =  's';
-	USI_TWI_Transmit_Byte(temp);
-		temp =  'i';
-	USI_TWI_Transmit_Byte(temp);
-		temp =  'u';
+		temp =  'm';
 	USI_TWI_Transmit_Byte(temp);
 		temp =  'm';
 	USI_TWI_Transmit_Byte(temp);
 		temp =  'i';
 	USI_TWI_Transmit_Byte(temp);
-		temp =  'o';
+		temp =  's';
 	USI_TWI_Transmit_Byte(temp);
-	//	USI_TWI_Transmit_Byte('2');
-		//	USI_TWI_Transmit_Byte('3');
-				//USI_TWI_Transmit_Byte('4');
-		//    if( USI_TWI_Data_In_Receive_Buffer() )
-		//    {
-			 //   temp = USI_TWI_Receive_Byte();
-	////		    PORTB = temp;
-			//    USI_TWI_Transmit_Byte(temp);
-		 //   }
-		//for (int i=1; i<=5; i++)
-		//{
-			//zapalDiode(i);
-			//_delay_ms(1000);
-			//zgasDiode(i);
+		temp =  'm';
+	USI_TWI_Transmit_Byte(temp);
+		temp =  'i';
+	USI_TWI_Transmit_Byte(temp);
+		temp =  's';
+	USI_TWI_Transmit_Byte(temp);
+
 			_delay_ms(1000);
 		//}
     }
